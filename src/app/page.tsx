@@ -10,11 +10,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen selection:bg-[#2a2a2a] selection:text-[#f4f4f4]">
+    <main id="top" className="min-h-screen selection:bg-[#2a2a2a] selection:text-[#f4f4f4]">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 flex justify-between items-center text-[11px] md:text-[13px] uppercase tracking-wide font-normal z-50 mix-blend-multiply text-[#2a2a2a]">
         <div>
-          <Link href="/">Venables<sup className="text-[8px] ml-[1px]">®</sup></Link>
+          <a href="#top">Venables<sup className="text-[8px] ml-[1px]">®</sup></a>
         </div>
         <nav className="hidden md:flex gap-16">
           <Link href="/#work" className="hover:opacity-50 transition-opacity">Work</Link>

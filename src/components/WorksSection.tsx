@@ -90,7 +90,7 @@ export default function WorksSection() {
 
   return (
     <>
-      <section id="work" className="px-6 md:px-12 pb-24 md:pb-40 overflow-hidden">
+      <section id="work" className="px-6 md:px-12 pb-24 md:pb-40 overflow-hidden -mt-12 md:-mt-24 relative z-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-16">
           {WORKS.map((work, index) => (
             <FadeIn key={work.id} delay={index * 0.1}>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="min-h-screen selection:bg-[#2a2a2a] selection:text-[#f4f4f4]">
       {/* Navbar */}
-      <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 flex justify-between items-center text-[10px] md:text-[11px] uppercase tracking-wide font-normal z-50 mix-blend-multiply text-[#2a2a2a]">
+      <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 flex justify-between items-center text-[11px] md:text-[13px] uppercase tracking-wide font-normal z-50 mix-blend-multiply text-[#2a2a2a]">
         <div>
           <Link href="/">Venables<sup className="text-[8px] ml-[1px]">®</sup></Link>
         </div>
@@ -26,11 +26,11 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-40 md:pt-48 px-6 md:px-12 pb-24 w-full">
+      <section className="pt-40 md:pt-48 px-6 md:px-12 pb-24 md:pb-40 w-full min-h-[85vh] flex flex-col justify-center relative z-10">
         <HeroTitle />
         
         <FadeIn delay={0.5}>
-          <div className="mt-12 md:mt-16 text-[10px] md:text-[11px] uppercase tracking-wide leading-relaxed flex flex-col sm:flex-row items-start sm:items-center gap-8">
+          <div className="mt-8 md:mt-12 text-[10px] md:text-[11px] uppercase tracking-wide leading-relaxed flex flex-col sm:flex-row items-start sm:items-center gap-8">
             <div>
               <p>Designed to engage</p>
               <p>Built to connect</p>
@@ -48,7 +48,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="px-6 md:px-12 py-24 md:py-40 relative overflow-hidden">
         {/* Background 3D Shape */}
-        <div className="absolute top-0 left-0 w-full md:w-1/2 h-full z-0 pointer-events-none opacity-60">
+        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 flex items-center justify-center">
           <VoidAesthetic />
         </div>
 
@@ -66,8 +66,8 @@ export default function Home() {
             </h3>
             </FadeIn>
             
-            <FadeIn delay={0.2} className="md:pl-0">
-              <div className="bg-[#f4f4f4] p-6 -mx-6 rounded-2xl md:bg-transparent md:p-0 md:mx-0">
+            <FadeIn delay={0.2} className="md:ml-auto md:pl-12 lg:pl-24">
+              <div className="bg-[#f4f4f4] p-6 -mx-6 md:bg-transparent md:p-0 md:mx-0">
                 <p className="text-sm md:text-base leading-relaxed text-[#2a2a2a]/90 mb-10 max-w-lg font-sans">
                   We engineer digital experiences that <span className="font-semibold text-[#2a2a2a]">command attention and drive results</span>. By fusing <span className="font-semibold text-[#2a2a2a]">strategic branding</span> with <span className="font-semibold text-[#2a2a2a]">cutting-edge web development</span>, we craft immersive platforms tailored for forward-thinking brands. Our collaborative approach ensures every project not only looks extraordinary but delivers <span className="font-semibold text-[#2a2a2a]">flawless technical performance</span>, ultimately <span className="font-semibold text-[#2a2a2a]">increasing bookings</span> and transforming how audiences interact with your business online.
                 </p>
@@ -117,7 +117,7 @@ export default function Home() {
           <FadeIn delay={0.2} className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-[10px] md:text-[11px] uppercase tracking-wide font-normal leading-relaxed">
             <div>
               <div className="text-[#2a2a2a]/50 mb-2">Business Enquiries</div>
-              <a href="mailto:hello@venables.studio" className="block hover:opacity-60 transition-opacity mb-1">hello@venables.studio</a>
+              <a href="mailto:hello@venables.studio" className="block hover:opacity-60 transition-opacity mb-1">HELLO@VENABLES.STUDIO</a>
               <div>+61 3 9000 0000</div>
 
               <div className="mt-12 text-[#2a2a2a]/50 mb-2">Business Hours</div>

@@ -23,7 +23,7 @@ export default function HeroTitle() {
   }, []);
 
   return (
-    <h1 className="text-[12vw] md:text-[9vw] leading-[0.8] tracking-[-0.03em] uppercase w-full">
+    <h1 className="text-[13vw] sm:text-[11vw] md:text-[9vw] lg:text-[8vw] xl:text-[7vw] leading-[0.85] tracking-[-0.03em] uppercase w-full">
       <AnimatedWord text="ELEVATING" forceHover={activeIndex === 0} />{" "}
       <AnimatedWord text="DIGITAL" forceHover={activeIndex === 1} />
       <br />

@@ -47,26 +47,24 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="px-6 md:px-12 py-24 md:py-40 relative overflow-hidden">
-        <div className="relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
-            <div className="relative">
-              {/* Background 3D Shape centered behind title and subtitle */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] max-w-[800px] aspect-square z-[-1] pointer-events-none opacity-60">
-                <VoidAesthetic />
-              </div>
+        {/* Background 3D Shape */}
+        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 flex items-center justify-center">
+          <VoidAesthetic />
+        </div>
 
-              <FadeIn>
-                <h2 className="text-[10vw] md:text-[8vw] leading-[0.8] tracking-[-0.03em] uppercase mb-16 md:mb-24">
-                  <ScrambleText text="ABOUT" />
-                </h2>
-              </FadeIn>
-              
-              <FadeIn delay={0.1}>
-                <h3 className="text-2xl md:text-4xl lg:text-[40px] leading-[1.1] tracking-[-0.02em] uppercase max-w-2xl">
-                  A MELBOURNE BASED DIGITAL STUDIO CRAFTING IMMERSIVE EXPERIENCES FOR AMBITIOUS BRANDS.
-                </h3>
-              </FadeIn>
-            </div>
+        <div className="relative z-10">
+          <FadeIn>
+            <h2 className="text-[10vw] md:text-[8vw] leading-[0.8] tracking-[-0.03em] uppercase mb-16 md:mb-24">
+              <ScrambleText text="ABOUT" />
+            </h2>
+          </FadeIn>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+            <FadeIn delay={0.1}>
+            <h3 className="text-2xl md:text-4xl lg:text-[40px] leading-[1.1] tracking-[-0.02em] uppercase max-w-2xl">
+              A MELBOURNE BASED DIGITAL STUDIO CRAFTING IMMERSIVE EXPERIENCES FOR AMBITIOUS BRANDS.
+            </h3>
+            </FadeIn>
             
             <FadeIn delay={0.2} className="md:ml-auto md:pl-12 lg:pl-24 flex flex-col justify-end">
               <div className="bg-[#f4f4f4] p-6 -mx-6 md:bg-transparent md:p-0 md:mx-0">
